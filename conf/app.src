@@ -1,5 +1,5 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/lapineige/13ft/releases/download/test/13ft.tar.gz
+SOURCE_SUM=ba6c666a0f521c465daf2f84433f77bd27c74364adfffadea89c4a8f08beb220
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
