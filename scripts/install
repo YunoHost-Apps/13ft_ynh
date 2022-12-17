@@ -109,7 +109,10 @@ ynh_script_progression --message="Installing python dependencies..." --weight=1
 
 # ynh_install_app_dependencies $pkg_dependencies
 
-venv/bin/pip install flask
+pushd $final_path
+	python3 -m venv venv
+	venv/bin/pip install --upgrade pip
+	venv/bin/pip install flask
 
 #=================================================
 # CREATE DEDICATED USER
