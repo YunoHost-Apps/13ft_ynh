@@ -63,7 +63,7 @@ ynh_remove_nginx_config
 ynh_script_progression --message="Removing dependencies..." --weight=1
 
 # Remove metapackage and its dependencies
-pip3 uninstall flask
+venv/bin/pip uninstall flask
 
 
 #=================================================
