@@ -1,7 +1,5 @@
 SOURCE_URL=https://github.com/wasi-master/13ft/releases/download/v0.1.1/portable.py
 SOURCE_SUM=7efb48e5a2fe4a68c66619d7d6275d53cfeac1b4ff19079369e182bcabd82eb4
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=
-SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=
-SOURCE_EXTRACT=true
+SOURCE_EXTRACT=false
+SOURCE_IN_SUBDIR=false
