@@ -14,7 +14,7 @@
     },
     "license": "AGPL-3",
     "maintainer": {
-        "name": "Lapineige",
+        "name": "Lapineige"
     },
     "requirements": {
         "yunohost": ">= 11.0.0"
@@ -39,7 +39,6 @@
                 "name": "is_public",
                 "type": "boolean",
                 "default": true
-            },
             }
         ]
     }
