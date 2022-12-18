@@ -23,11 +23,6 @@ https://github.com/wasi-master/13ft
 
 
 **Version incluse :** 0.1.1~ynh1
-
-## Captures d'écran
-
-![Capture d'écran de 13ft](./doc/screenshots/example.jpg)
-
 ## Avertissements / informations importantes
 
 
