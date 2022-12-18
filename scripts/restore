@@ -64,12 +64,18 @@ chown -R $app:www-data "$final_path"
 #=================================================
 # SPECIFIC RESTORATION
 #=================================================
+# REINSTALL DEPENDENCIES
+#=================================================
+ynh_script_progression --message="Reinstalling apt dependencies..." --weight=1
+
+# Define and install dependencies
+ynh_install_app_dependencies $pkg_dependencies
+
+#=================================================
 # INSTALL PYTHON DEPENDENCIES
 #=================================================
 ynh_script_progression --message="Reinstalling Python dependencies..." --weight=1
 
-# Define and install dependencies
-ynh_install_app_dependencies $pkg_dependencies
 pushd $final_path
 	python3 -m venv venv
 	venv/bin/pip install --upgrade pip
