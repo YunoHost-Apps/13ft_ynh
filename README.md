@@ -15,15 +15,11 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Some long and extensive description of what the app is and does, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+13ft is an [12ft ladder](https://12ft.io) selfhosted alternative that allows you to bypass some paywalls and read the article content anyway.
+https://github.com/wasi-master/13ft
 
 ### Features
-
-- Ut enim ad minim veniam, quis nostrud exercitation ullamco ;
-- Laboris nisi ut aliquip ex ea commodo consequat ;
-- Duis aute irure dolor in reprehenderit in voluptate ;
-- Velit esse cillum dolore eu fugiat nulla pariatur ;
-- Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+- Provide *some* web articles that are normally protected by paywalls.
 
 
 **Shipped version:** 0.1.1~ynh1
