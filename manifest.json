@@ -3,18 +3,18 @@
     "id": "13ft",
     "packaging_format": 1,
     "description": {
-        "en": "Selfhosted 12ft equivalent : bypass paywall by acting as GoogleBot",
-        "fr": "Un équivalent de 12ft autohébergé : contourner les paywall en vous faisant passer pour GoogleBot"
+        "en": "Selfhosted 12ft equivalent - bypass paywall by acting as GoogleBot",
+        "fr": "Un équivalent de 12ft autohébergé - contourner les paywall en vous faisant passer pour GoogleBot"
     },
-    "version": "0.1.1~ynh1",
+    "version": "0.1.1~ynh2",
     "url": "https://github.com/wasi-master/13ft",
     "upstream": {
         "license": "MIT",
-        "website": "https://github.com/wasi-master/13ft",
+        "website": "https://github.com/wasi-master/13ft"
     },
-    "license": "free",
+    "license": "AGPL-3",
     "maintainer": {
-        "name": "Lapineige",
+        "name": "Lapineige"
     },
     "requirements": {
         "yunohost": ">= 11.0.0"
@@ -39,7 +39,6 @@
                 "name": "is_public",
                 "type": "boolean",
                 "default": true
-            },
             }
         ]
     }
