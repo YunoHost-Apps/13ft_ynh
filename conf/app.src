@@ -1,5 +1,5 @@
 SOURCE_URL=https://github.com/wasi-master/13ft/archive/refs/tags/v0.1.1.tar.gz
 SOURCE_SUM=166685beb4aa1f924ef9d1b52d478702858b478a9e02cf49c1dab28e79d03601
 SOURCE_SUM_PRG=sha256sum
-SOURCE_EXTRACT=false
-SOURCE_IN_SUBDIR=false
+SOURCE_EXTRACT=true
+SOURCE_IN_SUBDIR=true
