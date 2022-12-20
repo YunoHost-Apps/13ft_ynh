@@ -6,7 +6,7 @@
         "en": "Selfhosted 12ft equivalent - bypass paywall by acting as GoogleBot",
         "fr": "Un équivalent de 12ft autohébergé - contourner les paywall en vous faisant passer pour GoogleBot"
     },
-    "version": "0.1.1~ynh1",
+    "version": "0.1.1~ynh2",
     "url": "https://github.com/wasi-master/13ft",
     "upstream": {
         "license": "MIT",
