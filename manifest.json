@@ -3,8 +3,8 @@
     "id": "13ft",
     "packaging_format": 1,
     "description": {
-        "en": "Selfhosted 12ft equivalent - bypass paywall by acting as GoogleBot",
-        "fr": "Un équivalent de 12ft autohébergé - contourner les paywall en vous faisant passer pour GoogleBot"
+        "en": "Bypass paywall by acting as GoogleBot",
+        "fr": "Contourner les paywall en vous faisant passer pour GoogleBot"
     },
     "version": "0.1.1~ynh3",
     "url": "https://github.com/wasi-master/13ft",
@@ -32,8 +32,8 @@
             {
                 "name": "path",
                 "type": "path",
-                "example": "/example",
-                "default": "/example"
+                "example": "/13ft",
+                "default": "/13ft"
             },
             {
                 "name": "is_public",
