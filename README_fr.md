@@ -5,15 +5,15 @@ It shall NOT be edited by hand.
 
 # 13ft pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/13ft.svg)](https://dash.yunohost.org/appci/app/13ft) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/13ft.svg)](https://dash.yunohost.org/appci/app/13ft) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)  
 [![Installer 13ft avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=13ft)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer 13ft rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer 13ft rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 13ft is an [12ft ladder](https://12ft.io) selfhosted alternative that allows you to bypass some paywalls and read the article content anyway.
 https://github.com/wasi-master/13ft
@@ -29,7 +29,7 @@ https://github.com/wasi-master/13ft
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://github.com/wasi-master/13ft>
+* Site officiel de l’app : <https://github.com/wasi-master/13ft>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_13ft>
 * Signaler un bug : <https://github.com/YunoHost-Apps/13ft_ynh/issues>
 
@@ -45,4 +45,4 @@ ou
 sudo yunohost app upgrade 13ft -u https://github.com/YunoHost-Apps/13ft_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
