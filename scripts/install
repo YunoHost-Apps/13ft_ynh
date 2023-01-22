@@ -28,33 +28,13 @@ domain=$YNH_APP_ARG_DOMAIN
 path_url=$YNH_APP_ARG_PATH
 is_public=$YNH_APP_ARG_IS_PUBLIC
 
-### If it's a multi-instance app, meaning it can be installed several times independently
-### The id of the app as stated in the manifest is available as $YNH_APP_ID
-### The instance number is available as $YNH_APP_INSTANCE_NUMBER (equals "1", "2"...)
-### The app instance name is available as $YNH_APP_INSTANCE_NAME
-###    - the first time the app is installed, YNH_APP_INSTANCE_NAME = ynhexample
-###    - the second time the app is installed, YNH_APP_INSTANCE_NAME = ynhexample__2
-###    - ynhexample__{N} for the subsequent installations, with N=3,4...
-### The app instance name is probably what interests you most, since this is
-### guaranteed to be unique. This is a good unique identifier to define installation path,
-### db names...
 app=$YNH_APP_INSTANCE_NAME
 
 #=================================================
 # CHECK IF THE APP CAN BE INSTALLED WITH THESE ARGS
 #=================================================
-### About --weight and --time
-### ynh_script_progression will show to your final users the progression of each scripts.
-### In order to do that, --weight will represent the relative time of execution compared to the other steps in the script.
-### --time is a packager option, it will show you the execution time since the previous call.
-### This option is implied when running in CI_package_check, you can manually add it if you are manually testing the app.
-### Use the execution time displayed in the CI report or by adding --time to the command, to estimate the weight of a step.
-### A common way to do it is to set a weight equal to the execution time in second +1.
-### The execution time is given for the duration since the previous call. So the weight should be applied to this previous call.
 ynh_script_progression --message="Validating installation parameters..." --weight=1
 
-### If the app uses NGINX as web server (written in HTML/PHP in most cases), the final path should be "/var/www/$app".
-### If the app provides an internal web server (or uses another application server such as uWSGI), the final path should be "/opt/yunohost/$app"
 final_path=/var/www/$app
 test ! -e "$final_path" || ynh_die --message="This path already contains a folder"
 
@@ -70,30 +50,6 @@ ynh_app_setting_set --app=$app --key=domain --value=$domain
 ynh_app_setting_set --app=$app --key=path --value=$path_url
 
 #=================================================
-# STANDARD MODIFICATIONS
-#=================================================
-# FIND AND OPEN A PORT
-#=================================================
-ynh_script_progression --message="Finding an available port..." --weight=1
-
-### Use these lines if you have to open a port for the application
-### `ynh_find_port` will find the first available port starting from the given port.
-### If you're not using these lines:
-###		- Remove the section "CLOSE A PORT" in the remove script
-
-# Find an available port
-#port=$(ynh_find_port --port=8095)
-#ynh_app_setting_set --app=$app --key=port --value=$port
-
-# Optional: Expose this port publicly
-# (N.B.: you only need to do this if the app actually needs to expose the port publicly.
-# If you do this and the app doesn't actually need you are CREATING SECURITY HOLES IN THE SERVER !)
-
-# Open the port
-# ynh_script_progression --message="Configuring firewall..." --weight=1
-# ynh_exec_warn_less yunohost firewall allow --no-upnp TCP $port
-
-#=================================================
 # CREATE DEDICATED USER
 #=================================================
 ynh_script_progression --message="Configuring system user..." --weight=1
@@ -106,20 +62,10 @@ ynh_system_user_create --username=$app --home_dir="$final_path"
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=1
 
-### `ynh_setup_source` is used to install an app from a zip or tar.gz file,
-### downloaded from an upstream source, like a git repository.
-### `ynh_setup_source` use the file conf/app.src
-
 ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$final_path"
 
-# FIXME: this should be managed by the core in the future
-# Here, as a packager, you may have to tweak the ownerhsip/permissions
-# such that the appropriate users (e.g. maybe www-data) can access
-# files in some cases.
-# But FOR THE LOVE OF GOD, do not allow r/x for "others" on the entire folder -
-# this will be treated as a security issue.
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
 chown -R $app:www-data "$final_path"
@@ -148,87 +94,28 @@ popd
 #=================================================
 ynh_script_progression --message="Configuring NGINX web server..." --weight=1
 
-### `ynh_add_nginx_config` will use the file conf/nginx.conf
-
 # Create a dedicated NGINX config
 ynh_add_nginx_config
-
-#=================================================
-# SPECIFIC SETUP
-#=================================================
-# ...
-#=================================================
-
 
 #=================================================
 # SETUP SYSTEMD
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
 
-### `ynh_systemd_config` is used to configure a systemd script for an app.
-### It can be used for apps that use sysvinit (with adaptation) or systemd.
-### Have a look at the app to be sure this app needs a systemd script.
-### `ynh_systemd_config` will use the file conf/systemd.service
-### If you're not using these lines:
-###		- You can remove those files in conf/.
-###		- Remove the section "BACKUP SYSTEMD" in the backup script
-###		- Remove also the section "STOP AND REMOVE SERVICE" in the remove script
-###		- As well as the section "RESTORE SYSTEMD" in the restore script
-###		- And the section "SETUP SYSTEMD" in the upgrade script
-
 # Create a dedicated systemd config
 ynh_add_systemd_config
-
-
-#=================================================
-# GENERIC FINALIZATION
-#=================================================
-
 
 #=================================================
 # INTEGRATE SERVICE IN YUNOHOST
 #=================================================
 ynh_script_progression --message="Integrating service in YunoHost..." --weight=1
 
-### `yunohost service add` integrates a service in YunoHost. It then gets
-### displayed in the admin interface and through the others `yunohost service` commands.
-### (N.B.: this line only makes sense if the app adds a service to the system!)
-### If you're not using these lines:
-###		- You can remove these files in conf/.
-###		- Remove the section "REMOVE SERVICE INTEGRATION IN YUNOHOST" in the remove script
-###		- As well as the section "INTEGRATE SERVICE IN YUNOHOST" in the restore script
-###		- And the section "INTEGRATE SERVICE IN YUNOHOST" in the upgrade script
-
 yunohost service add $app --description="A short description of the app" --log="/var/log/$app/$app.log"
-
-### Additional options starting with 3.8:
-###
-### --needs_exposed_ports "$port" a list of ports that needs to be publicly exposed
-###                               which will then be checked by YunoHost's diagnosis system
-###                               (N.B. DO NOT USE THIS is the port is only internal!!!)
-###
-### --test_status "some command"  a custom command to check the status of the service
-###                               (only relevant if 'systemctl status' doesn't do a good job)
-###
-### --test_conf "some command"    some command similar to "nginx -t" that validates the conf of the service
-###
-### Re-calling 'yunohost service add' during the upgrade script is the right way
-### to proceed if you later realize that you need to enable some flags that
-### weren't enabled on old installs (be careful it'll override the existing
-### service though so you should re-provide all relevant flags when doing so)
 
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=1
-
-### `ynh_systemd_action` is used to start a systemd service for an app.
-### Only needed if you have configure a systemd service
-### If you're not using these lines:
-###		- Remove the section "STOP SYSTEMD SERVICE" and "START SYSTEMD SERVICE" in the backup script
-###		- As well as the section "START SYSTEMD SERVICE" in the restore script
-###		- As well as the section"STOP SYSTEMD SERVICE" and "START SYSTEMD SERVICE" in the upgrade script
-###		- And the section "STOP SYSTEMD SERVICE" and "START SYSTEMD SERVICE" in the change_url script
 
 # Start a systemd service
 ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
@@ -245,17 +132,6 @@ then
 	# The "main" permission is automatically created before the install script.
 	ynh_permission_update --permission="main" --add="visitors"
 fi
-
-### N.B. : the following extra permissions only make sense if your app
-### does have for example an admin interface or an API.
-
-# Only the admin can access the admin panel of the app (if the app has an admin panel)
-# ynh_permission_create --permission="admin" --url="/admin" --allowed=$admin
-
-# Everyone can access the API part
-# We don't want to display the tile in the SSO so we put --show_tile="false"
-# And we don't want the YunoHost admin to be able to remove visitors group to this permission, so we put --protected="true"
-# ynh_permission_create --permission="api" --url="/api" --allowed="visitors" --show_tile="false" --protected="true"
 
 #=================================================
 # RELOAD NGINX
