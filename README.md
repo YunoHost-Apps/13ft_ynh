@@ -29,7 +29,7 @@ https://github.com/wasi-master/13ft
 
 ## Documentation and resources
 
-* Official app website: <https://github.com/wasi-master/13ft>
+* Upstream app code repository: <https://github.com/wasi-master/13ft>
 * YunoHost documentation for this app: <https://yunohost.org/app_13ft>
 * Report a bug: <https://github.com/YunoHost-Apps/13ft_ynh/issues>
 
