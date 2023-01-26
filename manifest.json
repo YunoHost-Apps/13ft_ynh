@@ -10,7 +10,7 @@
     "url": "https://github.com/wasi-master/13ft",
     "upstream": {
         "license": "MIT",
-        "website": "https://github.com/wasi-master/13ft"
+        "code": "https://github.com/wasi-master/13ft"
     },
     "license": "MIT",
     "maintainer": {
