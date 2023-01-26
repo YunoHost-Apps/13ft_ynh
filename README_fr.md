@@ -22,14 +22,14 @@ https://github.com/wasi-master/13ft
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**Version incluse :** 0.1.1~ynh3
+**Version incluse :** 0.1.1~ynh4
 ## Avertissements / informations importantes
 
 
 
 ## Documentations et ressources
 
-* Site officiel de l’app : <https://github.com/wasi-master/13ft>
+* Dépôt de code officiel de l’app : <https://github.com/wasi-master/13ft>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_13ft>
 * Signaler un bug : <https://github.com/YunoHost-Apps/13ft_ynh/issues>
 
