@@ -127,6 +127,19 @@ ynh_script_progression --message="Upgrading dependencies..." --weight=1
 ynh_install_app_dependencies $pkg_dependencies
 
 #=================================================
+# INSTALL PYTHON DEPENDENCIES
+#=================================================
+
+ynh_script_progression --message="Installing python dependencies..." --weight=1
+
+pushd $final_path
+	python3 -m venv venv
+	venv/bin/pip install --upgrade pip
+	venv/bin/pip install -r requirements.txt # should only be flask for now, but just in case
+	venv/bin/pip install requests
+popd
+
+#=================================================
 # NGINX CONFIGURATION
 #=================================================
 ynh_script_progression --message="Upgrading NGINX web server configuration..." --weight=1
