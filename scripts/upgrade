@@ -156,6 +156,8 @@ ynh_add_nginx_config
 #=================================================
 ynh_script_progression --message="Upgrading systemd configuration..." --weight=1
 
+mkdir /var/log/13ft
+
 # Create a dedicated systemd config
 ynh_add_systemd_config
 
