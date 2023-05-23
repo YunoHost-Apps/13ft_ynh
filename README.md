@@ -23,7 +23,7 @@ https://github.com/wasi-master/13ft
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**Shipped version:** 0.1.1~ynh5
+**Shipped version:** 0.1.1~ynh6
 ## Disclaimers / important information
 
 
