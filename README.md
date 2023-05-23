@@ -6,6 +6,7 @@ It shall NOT be edited by hand.
 # 13ft for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/13ft.svg)](https://dash.yunohost.org/appci/app/13ft) ![Working status](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)
+
 [![Install 13ft with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=13ft)
 
 *[Lire ce readme en français.](./README_fr.md)*
