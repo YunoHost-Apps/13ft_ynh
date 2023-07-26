@@ -103,6 +103,11 @@ ynh_add_nginx_config
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
 
+if [ ! -d /var/log/$app ]; then
+	mkdir /var/log/$app
+fi
+
+
 # Create a dedicated systemd config
 ynh_add_systemd_config
 

@@ -6,7 +6,7 @@
         "en": "Bypass paywall by acting as GoogleBot",
         "fr": "Contourner les paywall en vous faisant passer pour GoogleBot"
     },
-    "version": "0.1.1~ynh5",
+    "version": "0.2.0~ynh1",
     "url": "https://github.com/wasi-master/13ft",
     "upstream": {
         "license": "MIT",
