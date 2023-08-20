@@ -17,7 +17,7 @@
         "name": "Lapineige"
     },
     "requirements": {
-        "yunohost": ">= 11.0.0"
+        "yunohost": ">= 11.2"
     },
     "multi_instance": true,
     "services": [
