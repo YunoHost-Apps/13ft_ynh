@@ -1,5 +1,5 @@
 [Unit]
-Description=13ft launcher service
+Description=13ft: launcher service
 After=network.target
 
 [Service]

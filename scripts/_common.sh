@@ -2,9 +2,7 @@
 
 #=================================================
 # COMMON VARIABLES
-
-# dependencies used by the app (must be on a single line)
-#REMOVEME? pkg_dependencies="python3-venv"
+#=================================================
 
 #=================================================
 # PERSONAL HELPERS
