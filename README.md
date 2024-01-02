@@ -26,7 +26,6 @@ https://github.com/wasi-master/13ft
 **Shipped version:** 0.2.3~ynh1
 ## Documentation and resources
 
-* Official app website: <https://github.com/wasi-master/13ft>
 * Upstream app code repository: <https://github.com/wasi-master/13ft>
 * YunoHost Store: <https://apps.yunohost.org/app/13ft>
 * Report a bug: <https://github.com/YunoHost-Apps/13ft_ynh/issues>
