@@ -12,7 +12,6 @@ maintainers = ["Lapineige"]
 [upstream]
 license = "MIT"
 code = "https://github.com/wasi-master/13ft"
-website = "https://github.com/wasi-master/13ft"
 
 [integration]
 yunohost = ">= 11.2"
