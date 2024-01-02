@@ -6,8 +6,8 @@ After=network.target
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/venv/bin/python3 __FINALPATH__/index.py
+WorkingDirectory=__INSTALL_DIR__/
+ExecStart=__INSTALL_DIR__/venv/bin/python3 __INSTALL_DIR__/index.py
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
