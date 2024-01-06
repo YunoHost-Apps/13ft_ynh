@@ -41,6 +41,10 @@ pushd $install_dir
 	ynh_exec_as $app "$install_dir/venv/bin/pip" install -r requirements.txt
 popd
 
+ls -l $install_dir
+ls -l $install_dir/app
+ls -l $install_dir/app/index.py
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
