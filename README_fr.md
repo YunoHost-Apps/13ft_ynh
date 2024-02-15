@@ -16,12 +16,10 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-13ft is an [12ft ladder](https://12ft.io) selfhosted alternative that allows you to bypass some paywalls and read the article content anyway.
-https://github.com/wasi-master/13ft
+13ft est une alternative auto-hébergée de [12ft ladder](https://12ft.io) qui vous permet de contourner certains paywalls et de lire quand même le contenu de l'article.
 
-### Features
-- Provide *some* web articles that are normally protected by paywalls.
-
+### Caractéristiques
+- Fournissez *quelques* articles Web qui sont normalement protégés par des paywalls.
 
 **Version incluse :** 0.2.3~ynh1
 ## Documentations et ressources
