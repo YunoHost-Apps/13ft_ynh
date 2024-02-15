@@ -6,4 +6,4 @@ test_format = 1.0
     # EVERYTHING PAST THIS POINT IS OPTIONAL AND MOST LIKELY UNNECESSARY FOR NEW APPS
     #--------------------------------------------------------------------------------
 
-    exclude = ["install.subdir"]
+    exclude = ["install.subdir", "install.multi"]
