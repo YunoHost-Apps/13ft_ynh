@@ -1,15 +1,13 @@
 [Unit]
-Description=13ft launcher service
+Description=13ft: launcher service
 After=network.target
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/venv/bin/python3 __FINALPATH__/index.py
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
+WorkingDirectory=__INSTALL_DIR__/
+ExecStart=__INSTALL_DIR__/venv/bin/python3 __INSTALL_DIR__/app/index.py
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
