@@ -22,7 +22,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**Shipped version:** 0.2.3~ynh1
+**Shipped version:** 0.2.3~ynh2
 ## Documentation and resources
 
 * Upstream app code repository: <https://github.com/wasi-master/13ft>

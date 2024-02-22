@@ -21,7 +21,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 ### Caractéristiques
 - Fournissez *quelques* articles Web qui sont normalement protégés par des paywalls.
 
-**Version incluse :** 0.2.3~ynh1
+**Version incluse :** 0.2.3~ynh2
 ## Documentations et ressources
 
 * Dépôt de code officiel de l’app : <https://github.com/wasi-master/13ft>
