@@ -5,7 +5,7 @@ name = "13ft"
 description.en = "Bypass paywall by acting as GoogleBot"
 description.fr = "Contourner les paywall en vous faisant passer pour GoogleBot"
 
-version = "0.2.3~ynh1"
+version = "0.2.3~ynh2"
 
 maintainers = ["Lapineige"]
 
