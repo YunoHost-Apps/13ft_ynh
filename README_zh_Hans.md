@@ -5,7 +5,7 @@
 
 # YunoHost 上的 13ft
 
-[![集成程度](https://dash.yunohost.org/integration/13ft.svg)](https://dash.yunohost.org/appci/app/13ft) ![工作状态](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/13ft.svg)](https://ci-apps.yunohost.org/ci/apps/13ft/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)
 
 [![使用 YunoHost 安装 13ft](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=13ft)
 
@@ -22,7 +22,7 @@
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**分发版本：** 0.2.3~ynh2
+**分发版本：** 0.3.1~ynh1
 ## 文档与资源
 
 - 上游应用代码库： <https://github.com/wasi-master/13ft>

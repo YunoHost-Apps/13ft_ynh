@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # 13ft YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/13ft.svg)](https://dash.yunohost.org/appci/app/13ft) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/13ft.svg)](https://ci-apps.yunohost.org/ci/apps/13ft/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)
 
 [![Instalatu 13ft YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=13ft)
 
@@ -22,7 +22,7 @@ EZ editatu eskuz.
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**Paketatutako bertsioa:** 0.2.3~ynh2
+**Paketatutako bertsioa:** 0.3.1~ynh1
 ## Dokumentazioa eta baliabideak
 
 - Jatorrizko aplikazioaren kode-gordailua: <https://github.com/wasi-master/13ft>
