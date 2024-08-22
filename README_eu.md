@@ -22,7 +22,7 @@ EZ editatu eskuz.
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**Paketatutako bertsioa:** 0.3.2~ynh1
+**Paketatutako bertsioa:** 0.3.3~ynh1
 ## Dokumentazioa eta baliabideak
 
 - Jatorrizko aplikazioaren kode-gordailua: <https://github.com/wasi-master/13ft>
