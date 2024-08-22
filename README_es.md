@@ -22,7 +22,7 @@ No se debe editar a mano.
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**Versión actual:** 0.3.2~ynh1
+**Versión actual:** 0.3.3~ynh1
 ## Documentaciones y recursos
 
 - Repositorio del código fuente oficial de la aplicación : <https://github.com/wasi-master/13ft>

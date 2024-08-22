@@ -21,7 +21,7 @@ Il NE doit PAS être modifié à la main.
 ### Caractéristiques
 - Fournissez *quelques* articles Web qui sont normalement protégés par des paywalls.
 
-**Version incluse :** 0.3.2~ynh1
+**Version incluse :** 0.3.3~ynh1
 ## Documentations et ressources
 
 - Dépôt de code officiel de l’app : <https://github.com/wasi-master/13ft>
