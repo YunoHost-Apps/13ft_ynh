@@ -22,7 +22,7 @@ It shall NOT be edited by hand.
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**Shipped version:** 0.3.2~ynh1
+**Shipped version:** 0.3.3~ynh1
 ## Documentation and resources
 
 - Upstream app code repository: <https://github.com/wasi-master/13ft>
