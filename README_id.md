@@ -22,7 +22,7 @@ Ini TIDAK boleh diedit dengan tangan.
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**Versi terkirim:** 0.3.3~ynh1
+**Versi terkirim:** 0.3.4~ynh1
 ## Dokumentasi dan sumber daya
 
 - Depot kode aplikasi hulu: <https://github.com/wasi-master/13ft>

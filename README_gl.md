@@ -22,7 +22,7 @@ NON debe editarse manualmente.
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**Versión proporcionada:** 0.3.3~ynh1
+**Versión proporcionada:** 0.3.4~ynh1
 ## Documentación e recursos
 
 - Repositorio de orixe do código: <https://github.com/wasi-master/13ft>

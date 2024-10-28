@@ -22,7 +22,7 @@
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**分发版本：** 0.3.3~ynh1
+**分发版本：** 0.3.4~ynh1
 ## 文档与资源
 
 - 上游应用代码库： <https://github.com/wasi-master/13ft>

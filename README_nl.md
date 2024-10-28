@@ -22,7 +22,7 @@ Hij mag NIET handmatig aangepast worden.
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**Geleverde versie:** 0.3.3~ynh1
+**Geleverde versie:** 0.3.4~ynh1
 ## Documentatie en bronnen
 
 - Upstream app codedepot: <https://github.com/wasi-master/13ft>
