@@ -5,7 +5,9 @@
 
 # 13ft для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/13ft.svg)](https://ci-apps.yunohost.org/ci/apps/13ft/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/13ft)](https://ci-apps.yunohost.org/ci/apps/13ft/)
+![Состояние работы](https://apps.yunohost.org/badge/state/13ft)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/13ft)
 
 [![Установите 13ft с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=13ft)
 

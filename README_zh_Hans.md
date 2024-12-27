@@ -5,7 +5,9 @@
 
 # YunoHost 上的 13ft
 
-[![集成程度](https://dash.yunohost.org/integration/13ft.svg)](https://ci-apps.yunohost.org/ci/apps/13ft/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/13ft)](https://ci-apps.yunohost.org/ci/apps/13ft/)
+![工作状态](https://apps.yunohost.org/badge/state/13ft)
+![维护状态](https://apps.yunohost.org/badge/maintained/13ft)
 
 [![使用 YunoHost 安装 13ft](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=13ft)
 

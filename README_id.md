@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # 13ft untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/13ft.svg)](https://ci-apps.yunohost.org/ci/apps/13ft/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/13ft)](https://ci-apps.yunohost.org/ci/apps/13ft/)
+![Status kerja](https://apps.yunohost.org/badge/state/13ft)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/13ft)
 
 [![Pasang 13ft dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=13ft)
 

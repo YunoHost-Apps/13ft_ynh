@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # 13ft voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/13ft.svg)](https://ci-apps.yunohost.org/ci/apps/13ft/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/13ft)](https://ci-apps.yunohost.org/ci/apps/13ft/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/13ft)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/13ft)
 
 [![13ft met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=13ft)
 

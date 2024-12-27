@@ -5,7 +5,9 @@ NON debe editarse manualmente.
 
 # 13ft para YunoHost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/13ft.svg)](https://ci-apps.yunohost.org/ci/apps/13ft/) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/13ft)](https://ci-apps.yunohost.org/ci/apps/13ft/)
+![Estado de funcionamento](https://apps.yunohost.org/badge/state/13ft)
+![Estado de mantemento](https://apps.yunohost.org/badge/maintained/13ft)
 
 [![Instalar 13ft con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=13ft)
 

@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # 13ft YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/13ft.svg)](https://ci-apps.yunohost.org/ci/apps/13ft/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/13ft.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/13ft.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/13ft)](https://ci-apps.yunohost.org/ci/apps/13ft/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/13ft)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/13ft)
 
 [![Instalatu 13ft YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=13ft)
 
