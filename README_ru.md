@@ -22,7 +22,7 @@
 - Provide *some* web articles that are normally protected by paywalls.
 
 
-**Поставляемая версия:** 0.3.3~ynh1
+**Поставляемая версия:** 0.3.4~ynh1
 ## Документация и ресурсы
 
 - Репозиторий кода главной ветки приложения: <https://github.com/wasi-master/13ft>
