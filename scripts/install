@@ -37,6 +37,12 @@ ls -l $install_dir/app
 ls -l $install_dir/app/index.py
 
 #=================================================
+# PATCH BIND IP AND PORT
+#=================================================
+
+ynh_replace --match="app.run(debug=False)" --replace="app.run(host=\"127.0.0.1\", port=$port, debug=False)" --file="$install_dir/app/index.py"
+
+#=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
