@@ -5,7 +5,7 @@ name = "13ft"
 description.en = "Bypass paywall by acting as GoogleBot"
 description.fr = "Contourner les paywall en vous faisant passer pour GoogleBot"
 
-version = "0.3.4~ynh2"
+version = "0.4.0~ynh1"
 
 maintainers = ["Lapineige"]
 
@@ -37,8 +37,8 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/wasi-master/13ft/archive/refs/tags/v0.3.4.tar.gz"
-        sha256 = "8379d73c312ffe12f64f96006a835705fc4d147723fb472bd9c041671a73daa1"
+        url = "https://github.com/wasi-master/13ft/archive/refs/tags/v0.4.0.tar.gz"
+        sha256 = "845fc150f3d9b608782d089e5fa8b98e530c594a18c5e0356a023f1044891276"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
