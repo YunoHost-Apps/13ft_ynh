@@ -3,13 +3,13 @@ Description=13ft: launcher service
 After=network.target
 
 [Service]
-Type=simple
+Type=notify
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-Environment=PORT=__PORT__
-Environment=FLASK_APP=app/portable.py
-ExecStart=__INSTALL_DIR__/venv/bin/flask run --host=127.0.0.1
+ExecStart=__INSTALL_DIR__/python -m gunicorn 'portable:app' --bind=127.0.0.1:__PORT__
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
