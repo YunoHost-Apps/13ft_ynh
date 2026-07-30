@@ -37,9 +37,18 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/wasi-master/13ft/archive/refs/tags/v0.4.1.tar.gz"
-        sha256 = "2e800e4d5e216c986f5f6e2a8d43b90c5924e70a832a016c330387af15678bd7"
-        autoupdate.strategy = "latest_github_tag"
+        url = "https://github.com/wasi-master/13ft/releases/download/v0.4.1/portable.py"
+        sha256 = "2d38da7d3b8a13b7d310f11e93b91d943906f840aa99c565a9a7602b73b3f29f"
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset = "portable.py"
+        format = "whatever"
+        rename = "portable.py"
+
+        [resources.sources.requirements]
+        url = "https://raw.githubusercontent.com/wasi-master/13ft/refs/heads/main/requirements.txt"
+        sha256 = "3934941f5ada3b1132dab726e91cf896ba9854b011efa6767bad61ef4717c1d4"
+        format = "whatever"
+        rename = "requirements.txt"
 
     [resources.system_user]
 
