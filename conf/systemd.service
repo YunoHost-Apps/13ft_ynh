@@ -7,7 +7,7 @@ Type=notify
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/python -m gunicorn 'portable:app' --bind=127.0.0.1:__PORT__
+ExecStart=__INSTALL_DIR__/venv/bin/python -m gunicorn 'portable:app' --bind=127.0.0.1:__PORT__
 ExecReload=/bin/kill -s HUP $MAINPID
 KillMode=mixed
 
