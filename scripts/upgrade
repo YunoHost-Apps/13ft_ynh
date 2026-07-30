@@ -16,7 +16,6 @@ ynh_systemctl --service=$app --action="stop" --log_path="systemd"
 ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
-ynh_setup_source --dest_dir="$install_dir" --source_id="requirements"
 
 #=================================================
 # NGINX CONFIGURATION
@@ -42,12 +41,6 @@ pushd $install_dir
 	ynh_exec_as_app "$install_dir/venv/bin/pip" install --upgrade pip
 	ynh_exec_as_app "$install_dir/venv/bin/pip" install -r requirements.txt
 popd
-
-#=================================================
-# PATCH BIND IP AND PORT
-#=================================================
-
-ynh_replace --match="app.run(host=\"0.0.0.0\"" --replace="app.run(host=\"127.0.0.1\"" --file="$install_dir/portable.py"
 
 #=================================================
 # START SYSTEMD SERVICE

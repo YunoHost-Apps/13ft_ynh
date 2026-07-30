@@ -9,7 +9,6 @@ source /usr/share/yunohost/helpers
 ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
-ynh_setup_source --dest_dir="$install_dir" --source_id="requirements"
 
 #=================================================
 # SYSTEM CONFIGURATION
@@ -32,12 +31,6 @@ pushd "$install_dir"
 	venv/bin/pip install --upgrade pip
 	venv/bin/pip install -r requirements.txt
 popd
-
-#=================================================
-# PATCH BIND IP AND PORT
-#=================================================
-
-ynh_replace --match="app.run(host=\"0.0.0.0\"" --replace="app.run(host=\"127.0.0.1\"" --file="$install_dir/portable.py"
 
 #=================================================
 # START SYSTEMD SERVICE

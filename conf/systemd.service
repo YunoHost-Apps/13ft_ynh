@@ -8,7 +8,8 @@ User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 Environment=PORT=__PORT__
-ExecStart=__INSTALL_DIR__/venv/bin/python3 __INSTALL_DIR__/portable.py
+Environment=FLASK_APP=app/portable.py
+ExecStart=__INSTALL_DIR__/venv/bin/flask run --host=127.0.0.1
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
