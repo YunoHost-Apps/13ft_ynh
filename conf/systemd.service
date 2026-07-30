@@ -3,11 +3,13 @@ Description=13ft: launcher service
 After=network.target
 
 [Service]
-Type=simple
+Type=notify
 User=__APP__
 Group=__APP__
-WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/venv/bin/python3 __INSTALL_DIR__/app/index.py
+WorkingDirectory=__INSTALL_DIR__/app/
+ExecStart=__INSTALL_DIR__/venv/bin/python -m gunicorn 'portable:app' --bind=127.0.0.1:__PORT__
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
